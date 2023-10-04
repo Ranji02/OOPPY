@@ -6,6 +6,7 @@ class User:
     id = 0
     def __init__(self, name, email, phn_nbr, password):
         User.id += 1
+        self.id = User.id
         self.name = name
         self.email = email
         self.phn_nbr = phn_nbr
@@ -16,6 +17,7 @@ class House:
     id = 0
     def __init__(self, owner_id, name, permissible_gender, rent, total_space, avail_space, address, status):
         House.id += 1
+        self.id = House.id
         self.owner_id = owner_id
         self.name = name
         self.permissible_gender = permissible_gender
@@ -32,7 +34,8 @@ user4 = Users.append(User("Rayon", "rayon@gmail.com", 6754328909, "rayon@123"))
 user5 = Users.append(User("Rathesh", "rathesh@gmail.com", 6754328909, "rathesh@123"))
 # print(Users[0].name)
 
-
+for user in Users:
+    print(user.id)
 while True:
     print("----------Welcome------------")
     name = input("Enter user name :")
@@ -88,9 +91,3 @@ while True:
             #             for h in Houses:
             #                 if 
                         
-
-
-
-
-
-
