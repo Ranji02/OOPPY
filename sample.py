@@ -82,11 +82,11 @@ while True:
                         House_Requests.append({"house_id" : house.house_id, "owner_id" : house.owner_id, "needed_space" : needed_space})
                         print("Request sent to the house owner...")
 
-            if choice == 4:
-                for req in House_Requests:
-                    if user.id == req.owner_id:
-                        for h in Houses:
-                            if 
+            # if choice == 4:
+            #     for req in House_Requests:
+            #         if user.id == req.owner_id:
+            #             for h in Houses:
+            #                 if 
                         
 
 
